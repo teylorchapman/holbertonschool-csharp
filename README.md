@@ -1,0 +1,1 @@
+This is the stupid fucking bullshit i already fucking did and it all fucking deleted because im fucking trying to install dotnet and it fucking is refusing to install into my goddamn terminal.
