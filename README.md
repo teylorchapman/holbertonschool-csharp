@@ -1,1 +1,1 @@
-This is the stupid fucking bullshit i already fucking did and it all fucking deleted because im fucking trying to install dotnet and it fucking is refusing to install into my goddamn terminal.
+ooops the last bit of info in the readme was too much lmfao, you can probably still see what i changed in my commits lolololololol
