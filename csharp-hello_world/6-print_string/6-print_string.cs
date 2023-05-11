@@ -5,7 +5,7 @@ class Program
 	static void Main(string[] args)
 	{
 		string str = "Holberton School";
-        Console.WriteLine(string.Concat("{0}{0}{0}", str));
-        Console.Writeline(str.Substring(0, 9));
+        Console.WriteLine(string.Concat(str, str, str));
+        Console.WriteLine(str.Substring(0, 9));
         }
 }
