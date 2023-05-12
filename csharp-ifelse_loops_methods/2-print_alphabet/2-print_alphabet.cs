@@ -2,7 +2,7 @@
 
 public class Alphabet
 {
-    void lowercaseAlphabets()
+    public static void Main(string[] args)
     {
         for (char c = 'a'; c <= 'z'; c++)
             Console.Write(c);
