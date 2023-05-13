@@ -3,24 +3,24 @@ using System.Collections.Generic;
 
 public class Dictionary
 {
-    public static string BestScore(Dictionary<string, int> myList)
+    public static string BestScore(Dictionary<string, int> myDict)
     {
         if (myDict.Count == 0)
         {
             return "None";
         }
 
-        string maxkey = null;
-        int maxvalue = -1;
+        string maxKey = null;
+        int maxValue = -1;
 
         foreach (var pair in myDict)
         {
-            if (pair.Value > maxvalue)
+            if (pair.Value > maxValue)
             {
-                maxvalue = pair.Value;
-                maxkey = pair.Key;
+                maxValue = pair.Value;
+                maxKey = pair.Key;
             }
         }
-        return maxkey;
+        return maxKey;
     }
 }
