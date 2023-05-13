@@ -1,16 +1,14 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Dictionary
 {
     public static void PrintSorted(Dictionary<string, string> myDict)
     {
-        List<string> keys = new list<string>(myDict.Keys);
-        keys.Sort();
-
-        foreach (string key in keys)
+        foreach (var pair in myDict.OrderBy(pair => pair.Key))
         {
-            Console.WriteLine($"{key}: {myDict[key]}");
+            Console.WriteLine($"{pair.Key}: {pair.Value}");
         }
     }
 }
