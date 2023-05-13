@@ -5,7 +5,7 @@ public class spongebox
 {
     public static void Main(String[] args)
     {
-        int[,] myArray = new int[5, 5];
+        int[] myArray = new int[5, 5];
         myArray[2, 2] = 1;
         for (int i = 0; i < 5; i++)
         {
