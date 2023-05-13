@@ -16,6 +16,6 @@ public class List
                 sum += i;
             }
         }
+        return sum;
     }
-    return sum;
 }
