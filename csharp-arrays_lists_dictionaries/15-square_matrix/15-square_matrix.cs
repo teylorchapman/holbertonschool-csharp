@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class MaTrIx
+public class Matrix
 {
     public static int [,] Square(int [,] myMatrix)
     {
