@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class OggBox
+public class spongebox
 {
     public static void Main(String[] args)
     {
