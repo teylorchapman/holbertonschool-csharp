@@ -2,11 +2,11 @@
 
 public class Array
 {
-    public static void Reverse(int[] arr)
+    public static void Reverse(int[] array)
     {
-        for (int i = arr.Length - 1; i >= 0; i--)
+        for (int i = array.Length - 1; i >= 0; i--)
         {
-            Console.Write(arr[i] + " ");
+            Console.Write(array[i] + (i != 0 ? " " : ""));
         }
         Console.WriteLine();
     }
