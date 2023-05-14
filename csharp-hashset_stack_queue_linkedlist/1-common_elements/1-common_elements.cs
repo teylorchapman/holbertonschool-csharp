@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-pubic class List
+public class List
 {
     public static List<int> CommonElements(List<int> list1, List<int> list2)
     {
