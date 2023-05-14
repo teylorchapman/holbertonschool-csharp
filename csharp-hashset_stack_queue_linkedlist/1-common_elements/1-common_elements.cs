@@ -23,7 +23,7 @@ pubic class List
             {
                 if (common[y] < common[x])
                 {
-                    int temp = common[x]
+                    int temp = common[x];
                     common[x] = common[y];
                     common[y] = temp;
 
