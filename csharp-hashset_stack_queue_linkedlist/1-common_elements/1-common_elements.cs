@@ -6,27 +6,26 @@ public class List
     public static List<int> CommonElements(List<int> list1, List<int> list2)
     {
         HashSet<int> set1 = new HashSet<int>(list1);
-        HashSet<int> set 2 = new HashSet<int>(list);
-        HashSet<int> sum = new List<int>();
+        HashSet<int> set2 = new HashSet<int>(list2);
 
-        foreach (var common in set1)
+        List<int> common = new List<int>();
+        
+        foreach (var item in set1)
         {
-            if (set2.Contains(common))
+            if (set2.Contains(item))
             {
-                sum.Add(common);
+                common.Add(item);
             }
         }
-
-        for (int x = 0; i < common.Count -1; x++)
+        for (int i = 0; i < common.Count - 1; i++)
         {
-            for (int y = x + 1; y < common.Count; y++)
+            for (int j = i + 1; j < common.Count; j++)
             {
-                if (common[y] < common[x])
+                if (common[j] < common[i])
                 {
-                    int temp = common[x];
-                    common[x] = common[y];
-                    common[y] = temp;
-
+                    int temp = common[i];
+                    common[i] = common[j];
+                    common[j] = temp;
                 }
             }
         }
