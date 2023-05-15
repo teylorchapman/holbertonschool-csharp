@@ -5,7 +5,7 @@ public class MyQueue
 {
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
-        Console.WriteLine("Number of items: ",  aQueue.Count);
+        Console.WriteLine("Number of items: {0}",  aQueue.Count);
         
         if (aQueue.Count > 0)
             Console.WriteLine("Top item: " + aQueue.Count);
