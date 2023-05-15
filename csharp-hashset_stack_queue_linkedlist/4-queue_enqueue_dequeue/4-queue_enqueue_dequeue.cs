@@ -12,9 +12,8 @@ public class MyQueue
         else
             Console.WriteLine("Stack is empty");
         
-        bool containsSearch = aQueue.Countains(search);
+        bool containsSearch = aQueue.Contains(search);
         Console.WriteLine("Queue contains \"{0}\": {1}", search, containsSearch);
-        
         if (containsSearch)
         {
             while (aQueue.Dequeue() != search)
