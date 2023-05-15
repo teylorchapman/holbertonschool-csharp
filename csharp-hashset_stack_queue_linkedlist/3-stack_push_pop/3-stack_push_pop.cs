@@ -8,13 +8,13 @@ public class MyStack
         Console.WriteLine("Number of items: " + aStack.Count);
 
         if (aStack.Count > 0)
-            Console.WriteLine("Top item: " + aStack.Peek()):
+            Console.WriteLine("Top item: " + aStack.Peek());
         else
             Console.WriteLine("Stack is empty");
     }
 
     bool containsSearch = aStack.Contains(search);
-    Console.WriteLine("Stack contains " + search + ": " + containsSearch);
+     Console.WriteLine("Stack contains \"{0}\": {1}", search, containsSearch);
 
     if (containsSearch)
     {
