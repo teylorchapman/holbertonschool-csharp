@@ -11,29 +11,16 @@ public class MyStack
             Console.WriteLine("Top item: " + aStack.Peek()):
         else
             Console.WriteLine("Stack is empty");
-
-        Console.WriteLine("Stack contains " + search + ": " + aStack.Contains(search));
-
-        if (aStack.Contains(search))
-        {
-            Stack<string> tempStack = new Stack<string>();
-
-            while (aStack.Count > 0)
-            {
-                string item = aStack.Pop();
-
-                if (item == search)
-                break;
-
-                tempStack.Push(item);
-            }
-            while (tempStack.Count > 0)
-            {
-                aStack.Push(tempStack.Pop());
-            }
-        }
-        aStack.Push(newItem);
-
-        return aStack;
     }
+
+    bool containsSearch = aStack.Contains(search);
+    Console.WriteLine("Stack contains " + search + ": " + containsSearch);
+
+    if (containsSearch)
+    {
+        while (aStack.Pop() != search)
+            continue;
+    }
+    aStack.Push(newItem);
+    return aStack;
 }
