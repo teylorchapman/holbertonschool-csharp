@@ -5,6 +5,7 @@ public class MyQueue
 {
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
+        #if this fixes the problem then im mad lmao
         Console.WriteLine("Number of items: "),  aQueue.Count;
         
         if (aQueue.Count > 0)
