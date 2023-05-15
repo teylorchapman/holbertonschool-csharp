@@ -8,7 +8,7 @@ public class MyQueue
         Console.WriteLine("Number of items: {0}",  aQueue.Count);
         
         if (aQueue.Count > 0)
-            Console.WriteLine("Top item: " + aQueue.Count);
+            Console.WriteLine("First item: {0}" + aQueue.Count);
         else
             Console.WriteLine("Stack is empty");
         
