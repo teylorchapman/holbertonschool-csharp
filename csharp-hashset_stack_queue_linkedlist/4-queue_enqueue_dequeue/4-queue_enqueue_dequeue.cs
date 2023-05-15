@@ -10,7 +10,7 @@ public class MyQueue
         if (aQueue.Count > 0)
             Console.WriteLine("First item: " + aQueue.Peek());
         else
-            Console.WriteLine("Stack is empty");
+            Console.WriteLine("Queue is empty");
         
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine("Queue contains \"{0}\": {1}", search, containsSearch);
