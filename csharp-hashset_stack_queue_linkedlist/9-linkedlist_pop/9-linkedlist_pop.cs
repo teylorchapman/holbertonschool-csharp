@@ -10,5 +10,6 @@ public class LList
         
         int i = myLList.First.Value;
         myLList.RemoveFirst();
+        return i;
     }
 }
