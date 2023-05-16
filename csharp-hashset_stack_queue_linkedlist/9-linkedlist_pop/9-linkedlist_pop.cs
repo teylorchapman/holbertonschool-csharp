@@ -5,7 +5,7 @@ public class LList
 {
     public static int Pop(LinkedList<int> myLList)
     {
-        if (myLList == NULL || myLList.Count == 0)
+        if (myLList == null || myLList.Count == 0)
             return 0;
         
         int i = myLList.First.Value;
