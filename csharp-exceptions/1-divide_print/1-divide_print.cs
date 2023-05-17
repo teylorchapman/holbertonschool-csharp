@@ -8,7 +8,7 @@ public class Int
 
         try
         {
-            int sum = a / b;
+            sum = a / b;
         }
         catch (Exception)
         {
