@@ -15,7 +15,6 @@ public class List
             catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
-                sum.Add(0);
             }
         }
         return sum;
