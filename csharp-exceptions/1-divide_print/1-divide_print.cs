@@ -2,10 +2,10 @@
 
 public class Int
 {
-    public static void Divide(int a, int b)
+    public static void divide(int a, int b)
     {
         int sum = 0;
-        
+
         try
         {
             int sum = a / b;
