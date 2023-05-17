@@ -4,6 +4,8 @@ public class Int
 {
     public static void Divide(int a, int b)
     {
+        int sum = 0;
+        
         try
         {
             int sum = a / b;
