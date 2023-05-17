@@ -25,7 +25,7 @@ public class List
         int sum = 0;
         try
         {
-            res = a / b;
+            sum = a / b;
         }
         catch (DivideByZeroException)
         {
