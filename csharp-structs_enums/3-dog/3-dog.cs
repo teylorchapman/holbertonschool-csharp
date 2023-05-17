@@ -22,7 +22,7 @@ public struct Dog
         this.rating = rating;
     }
 
-    public override string ToStroing()
+    public override string ToString()
     {
         return (String.Format("Dog Name: {name}\nAge: {age}\nOwner: {owner}\nRating: {rating}"));
     }
