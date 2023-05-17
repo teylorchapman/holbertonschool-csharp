@@ -14,7 +14,7 @@ public class Int
         }
         finally
         {
-            Console.WriteLine("{0} / {1} = {2}", a, b, sum)
+            Console.WriteLine("{0} / {1} = {2}", a, b, sum);
         }
     }
 }
