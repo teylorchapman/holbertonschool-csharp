@@ -8,6 +8,10 @@ namespace Enemies
     
     public class Zombie
     {
+
+        ///<summary>
+        /// these are the field thingys that i need i guess.
+        ///</summary>
         private int health;
         private string name;        
         
