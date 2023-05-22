@@ -8,18 +8,18 @@ namespace Enemies
     public class Zombie
     {
         ///<summary>
-        /// int health
+        /// int health = 0
         ///</summary>
 
         public int health;
 
         ///<summary>
-        /// default constructor
+        /// public constructor
         /// </summary>
 
         public Zombie()
         {
-            
+
         }
     }
 }
