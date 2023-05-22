@@ -17,7 +17,6 @@ namespace Enemies
         /// int health = 0
         ///</summary>
 
-        private int health;
 
         ///<summary>
         /// public constructor
