@@ -2,15 +2,17 @@
 
 namespace Enemies
 {
-    private int health;
-    private string name;
+    
     
     ///<summary>
     /// This is an empty public Class.
     ///</summary>
     
     public class Zombie
-    {        
+    {
+        private int health;
+        private string name;        
+        
         ///<summary>
         /// int health = 0
         ///</summary>
