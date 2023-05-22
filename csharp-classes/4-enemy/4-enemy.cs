@@ -25,8 +25,7 @@ namespace Enemies
 
         public Zombie()
         {
-            health = 0;
-            name = "(No name)";
+
         }
 
         ///<summary>
