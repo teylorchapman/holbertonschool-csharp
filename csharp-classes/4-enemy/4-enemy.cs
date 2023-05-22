@@ -1,20 +1,17 @@
-﻿using System;
+﻿﻿using System;
 
 namespace Enemies
 {
+    
+    
     ///<summary>
     /// This is an empty public Class.
     ///</summary>
     
     public class Zombie
     {
-
-        ///<summary>
-        /// these are the field thingys that i need i guess.
-        ///</summary>
-
         private int health;
-        private string name = null;        
+        private string name;        
         
         ///<summary>
         /// int health = 0
