@@ -42,7 +42,7 @@ namespace Enemies
         /// Returns the value of health.
         ///</summary>
 
-        public class int GetHealth()
+        public int GetHealth()
         {
             return health;
         }
