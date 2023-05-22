@@ -2,6 +2,8 @@
 
 namespace Enemies
 {
+    private int health;
+    
     ///<summary>
     /// This is an empty public Class.
     ///</summary>
