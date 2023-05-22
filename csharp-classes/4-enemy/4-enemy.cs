@@ -2,8 +2,6 @@
 
 namespace Enemies
 {
-    
-    
     ///<summary>
     /// This is an empty public Class.
     ///</summary>
