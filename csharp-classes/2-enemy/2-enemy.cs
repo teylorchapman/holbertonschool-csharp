@@ -31,7 +31,7 @@ namespace Enemies
         {
             if (value < 0)
             {
-                throw new ArgumentException("Health must be great than or equal to 0")
+                throw new ArgumentException("Health must be great than or equal to 0");
             }
         }
     }
