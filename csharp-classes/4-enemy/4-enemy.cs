@@ -12,9 +12,9 @@ namespace Enemies
         ///<summary>
         /// these are the field thingys that i need i guess.
         ///</summary>
-        
+
         private int health;
-        private string name;        
+        private string name = null;        
         
         ///<summary>
         /// int health = 0
@@ -54,7 +54,7 @@ namespace Enemies
 
         public string Name
         {
-            get { return name; }
+            get { return name == null ? "(No name)" : name; }
             set { name = value; }
         }
 
