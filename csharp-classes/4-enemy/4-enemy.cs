@@ -45,8 +45,8 @@ namespace Enemies
 
         public string Name
         {
-            get (return name);
-            set (name = value);
+            get { return name; }
+            set { name = value; }
         }
 
 
