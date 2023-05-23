@@ -1,9 +1,12 @@
 ﻿using System;
 
+///<summary>
+/// public class
+///</summary>
 public class Obj
 {
     ///<summary>
-    /// obj class with IsOfTypeInt method
+    /// static bool prototype
     ///</summary> 
     public static bool IsOfTypeInt(object obj)
     {
