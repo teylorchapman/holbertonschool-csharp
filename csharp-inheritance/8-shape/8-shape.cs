@@ -89,7 +89,7 @@ public class Square
     ///<summary>
     /// public property
     ///</summary>
-    public int size
+    public int Size
     {
         get { return size; }
         set
