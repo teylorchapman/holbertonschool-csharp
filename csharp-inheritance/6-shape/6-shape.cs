@@ -26,6 +26,9 @@ public class Rectangle : Shape
     private int width;
     private int height;
 
+    ///<summary>
+    /// This is finding the value of the width
+    ///</summary>
     public int Width
     {
         get { return width; }
@@ -39,6 +42,9 @@ public class Rectangle : Shape
         }
     }
     
+    ///<summary>
+    /// This is finding the value of the height
+    ///</summary>
     public int Height
     {
         get { return height;}
