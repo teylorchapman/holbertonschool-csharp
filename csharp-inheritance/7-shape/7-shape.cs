@@ -71,6 +71,6 @@ public class Rectangle : Shape
     ///</summary>
     public override string ToString()
     {
-        return $"[Rectangle] <width> / <height>";
+        return $"[Rectangle] {width} / {height}";
     }
 }
