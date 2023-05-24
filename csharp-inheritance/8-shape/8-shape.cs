@@ -79,7 +79,7 @@ public class Rectangle : Shape
 /// This is a subsubclass that inherits from 
 /// Rectangle which inherits from Shape
 ///</summary>
-public class Square
+public class Square : Rectangle
 {
     ///<summary>
     /// private field to find the size
@@ -99,8 +99,8 @@ public class Square
                 throw new ArgumentException("Size must be greater than or equal to 0");
             }
             size = value;
-            Height = value;
-            Width = value;
+            height = value;
+            width = value;
         }
     }
 }
