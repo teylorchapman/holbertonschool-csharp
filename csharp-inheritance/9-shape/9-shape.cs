@@ -109,7 +109,7 @@ public class Square : Rectangle
     ///</summary>
     public new int Area()
     {
-        return height * width;
+        return Height * Width;
     }
 
     ///<summary>
@@ -117,6 +117,6 @@ public class Square : Rectangle
     ///</summary>
     public override string ToString()
     {
-        return $"[Square] {width} / {height}";
+        return $"[Square] {Width} / {Height}";
     }
 }
