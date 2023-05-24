@@ -84,7 +84,7 @@ public class Square
     ///<summary>
     /// private field to find the size
     ///</summary>
-    private int size
+    private int size;
 
     ///<summary>
     /// public property
