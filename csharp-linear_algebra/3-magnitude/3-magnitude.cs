@@ -6,7 +6,8 @@
 public class VectorMath
 {
     ///<summary>
-    /// Method to calculate & return the length of a vector
+    /// Method for calculating the length of the vector
+    /// it also will return the length
     ///</summary>
     public static double Magnitude(double[] vector)
     {
