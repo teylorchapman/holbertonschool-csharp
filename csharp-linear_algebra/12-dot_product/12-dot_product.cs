@@ -2,6 +2,7 @@
 
 ///<summary>
 /// Public class
+///</summary>
 public class VectorMath
 {
     ///<summary>
