@@ -7,6 +7,7 @@ public class VectorMath
 {
     ///<summary>
     /// Method that multiplies a vector and a scalar
+    ///</summary>
     public static double[] Multiply(double[] vector, double scalar)
     {
         if (vector.Length != 3 && vector.Length != 2)
@@ -15,7 +16,7 @@ public class VectorMath
         }
 
         double[] sum = new double[vector.Length];
-        for (int x = 0; i < vector.Length; x++)
+        for (int x = 0; x < vector.Length; x++)
         {
             sum[x] = vector[x] * scalar;
         }
