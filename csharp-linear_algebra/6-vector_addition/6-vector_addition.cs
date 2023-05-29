@@ -17,7 +17,7 @@ public class VectorMath
             return (new Double[1]{-1});
         }
 
-        double sum = new Double[3];
+        double[] sum = new Double[vector1.Length];
         for (int x = 0; x < vector1.Length; x++)
         {
             sum[x] = vector1[x] + vector2[x];
