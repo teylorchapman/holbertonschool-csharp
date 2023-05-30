@@ -1,13 +1,14 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections;
     
-/// <summary>Create a method that rotates a square 2D matrix by a given angle in radians and returns the resulting matrix</summary>
-class MatrixMath
+/// <summary>
+/// Public class
+///</summary>
+public class MatrixMath
 {
-    /// <summary>Create a method that rotates a square 2D matrix by a given angle in radians and returns the resulting matrix</summary>
-    /// <returns>If the matrix is of an invalid size, return a matrix containing -1</returns>
-    /// <param name="matrix">: Matrix to rotate. </param>
-    /// <param name="angle">: Angle to rotate the matrix. </param>
+    /// <summary>
+    /// Create a method that rotates a square 2D matrix by a given angle in radians
+    ///</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         double cos = Math.Cos(angle);
