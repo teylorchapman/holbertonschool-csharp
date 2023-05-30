@@ -10,8 +10,8 @@ public class MatrixMath
     ///</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        rows = matrix.GetLength(0);
-        columns = matrix.GetLength(1);
+        int rows = matrix.GetLength(0);
+        int columns = matrix.GetLength(1);
 
         if (rows != columns)
             return new double[,] { {-1} };
