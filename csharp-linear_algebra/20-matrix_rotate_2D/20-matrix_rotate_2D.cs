@@ -10,32 +10,25 @@ public class MatrixMath
     ///</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        int rows = matrix.GetLength(0);
-        int columns = matrix.GetLength(1);
-
-        if (rows != columns)
+        angle *= -1;
+        
+        if (! ValidateMatrix2D(matrix))
             return new double[,] { {-1} };
         
-        double[,] rotatedMatrix = new double[rows, columns];
-        double cosAngle = Math.Cos(angle);
-        double sinAngle = Math.Sin(angle);
-
-        for (int i = 0; i < rows; i++)
+        double[,] sum = new double[2, 2], rotate = new double[2,2] ;
+        rotate[0, 0] =  Math.Cos(angle);
+        rotate[0, 1] = -1 * Math.Sin(angle);
+        rotate[1, 0] = Math.Sin(angle);
+        rotate[1, 1] = Math.Cos(angle);
+        
+        sum = Multiply(matrix, rotate);
+        for(int i = 0; i < sum.GetLength(0); i++)
         {
-            for (int j = 0; j < columns; j++)
+            for(int j = 0; j < sum.GetLength(1); j++)
             {
-                double x = i - (rows - 1) / 2.0;
-                double y = j - (columns - 1) / 2.0;
-
-                double rotatedX = x * cosAngle - y * sinAngle;
-                double rotatedY = x * sinAngle + y * cosAngle;
-
-                rotatedX += (rows - 1) / 2.0;
-                rotatedY += (columns - 1) / 2.0;
-
-                rotatedMatrix[i, j] = Math.Round(matrix[(int)rotatedX, (int)rotatedY]);
+                sum[i, j] = Math.Round(sum[i, j], 2);
             }
         }
-        return rotatedMatrix;
+        return sum;
     }
 }
