@@ -22,7 +22,7 @@ public class MatrixMath
             {
                 sum[i, j] = matrix[i, j] * scalar;
             }
-            return sum;
         }
+        return sum;
     }
 }
