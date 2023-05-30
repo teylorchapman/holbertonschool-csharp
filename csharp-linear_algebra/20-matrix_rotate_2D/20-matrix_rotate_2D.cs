@@ -12,7 +12,7 @@ public class MatrixMath
     {
         angle *= -1;
         
-        if (! ValidateMatrix2D(matrix))
+        if (matrix is double[,] && matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
             return new double[,] { {-1} };
         
         double[,] sum = new double[2, 2], rotate = new double[2,2] ;
