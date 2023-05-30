@@ -22,7 +22,7 @@ public class MatrixMath
 
         for (int i = 0; i < rows; i++)
         {
-            for (int j = 0; j < columns, j++)
+            for (int j = 0; j < columns; j++)
             {
                 double x = i - (rows - 1) / 2.0;
                 double y = j - (columns - 1) / 2.0;
