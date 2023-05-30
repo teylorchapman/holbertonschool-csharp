@@ -21,7 +21,7 @@ public class MatrixMath
         rotate[1, 0] = Math.Sin(angle);
         rotate[1, 1] = Math.Cos(angle);
         
-        sum = Multiply(matrix, rotate);
+        double[,] sum = new double(matrix, rotate);
         for(int i = 0; i < sum.GetLength(0); i++)
         {
             for(int j = 0; j < sum.GetLength(1); j++)
