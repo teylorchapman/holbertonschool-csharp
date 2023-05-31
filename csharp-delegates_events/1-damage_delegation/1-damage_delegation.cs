@@ -36,7 +36,7 @@ public class Player
     }
 
     ///<summary> TakeDamage method </summary>
-    public void TakeDown(float damage)
+    public void TakeDamage(float damage)
     {
         if (damage < 0f)
         {
