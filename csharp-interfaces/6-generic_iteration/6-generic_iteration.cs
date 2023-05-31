@@ -163,7 +163,7 @@ public class Objs<T> : IEnumerable<T>
     ///<summary> Adding an element method </summary>
     public void Add(T item)
     {
-        this.collection.Add(obj);
+        this.collection.Add(item);
     }
 
     ///<summary> GetEnumerator method </summary>
