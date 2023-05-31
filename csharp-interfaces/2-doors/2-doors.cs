@@ -6,7 +6,7 @@
 public interface IInteractive
 {
     ///<summary> Interact method </summary>
-    public void Interact();
+    void Interact();
 }
 
 ///<summary>
