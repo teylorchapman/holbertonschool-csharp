@@ -52,6 +52,7 @@ public class TestObject : Base, IIneteractive, IBreakable, ICollectable
 {
     ///<summary> This is testing </summary>
     public int durability { get; set; }
+    ///<summary> Bool </summary>
     public bool isCollected { get; set; }
 
     ///<summary> Interact method </summary>
