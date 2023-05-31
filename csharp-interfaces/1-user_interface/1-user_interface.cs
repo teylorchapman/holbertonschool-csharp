@@ -41,7 +41,7 @@ public abstract class Base
 ///<summary>
 /// Public class
 ///</summary>
-public class Test Object : Base, IIneteractive, IBreakable, ICollectable
+public class TestObject : Base, IIneteractive, IBreakable, ICollectable
 {
     public int durability { get; set; }
     public bool isCollected { get; set; }
