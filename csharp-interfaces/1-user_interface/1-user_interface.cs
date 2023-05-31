@@ -1,7 +1,7 @@
 ﻿using System;
 
 ///<summary>
-/// IIneteractive interface
+/// IInteractive interface
 ///</summary>
 public interface IInteractive
 {
@@ -48,7 +48,7 @@ public abstract class Base
 ///<summary>
 /// Public class
 ///</summary>
-public class TestObject : Base, IIneteractive, IBreakable, ICollectable
+public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     ///<summary> This is testing </summary>
     public int durability { get; set; }
