@@ -55,6 +55,13 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     ///<summary> Bool </summary>
     public bool isCollected { get; set; }
 
+    ///<summary> This will hopefully fix my issue of not giving name w the main.cs </summary>
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
     ///<summary> Interact method </summary>
     public void Interact()
     {}
