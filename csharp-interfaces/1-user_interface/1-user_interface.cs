@@ -5,7 +5,9 @@
 ///</summary>
 public interface IIneteractive
 {
-    ///<summary> Interact thing </summary>
+    ///<summary>
+    /// Interact thing
+    ///</summary>
     void Interact();
 }
 
@@ -14,7 +16,9 @@ public interface IIneteractive
 ///</summary>
 public interface IBreakable
 {
-    ///<summary> Tests Durability </summary>
+    ///<summary>
+    /// Tests Durability
+    ///</summary>
     int durability { get; set; }
     void Break();
 }
@@ -24,7 +28,9 @@ public interface IBreakable
 ///</summary>
 public interface ICollectable
 {
-    ///<summary> Collects something </summary>
+    ///<summary>
+    /// Collects something
+    ///</summary>
     bool isCollected { get; set; }
     void Collect();
 }
@@ -34,6 +40,9 @@ public interface ICollectable
 ///</summary>
 public abstract class Base
 {
+    ///<summary>
+    /// This is the base class that overrides a string
+    ///</summary>
     public string name;
     public override string ToString()
     {
@@ -46,6 +55,9 @@ public abstract class Base
 ///</summary>
 public class TestObject : Base, IIneteractive, IBreakable, ICollectable
 {
+    ///<summary>
+    /// This is testing
+    ///</summary>
     public int durability { get; set; }
     public bool isCollected { get; set; }
 
