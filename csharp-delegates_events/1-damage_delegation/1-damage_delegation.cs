@@ -51,7 +51,7 @@ public class Player
         if (heal < 0f)
         {
             heal = 0f;
-            Console.WriteLine($"{name} heals {heal} HP!")
+            Console.WriteLine($"{name} heals {heal} HP!");
         }
     }
 }
