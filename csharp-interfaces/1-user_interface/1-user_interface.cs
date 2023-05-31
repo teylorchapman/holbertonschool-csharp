@@ -38,6 +38,7 @@ public abstract class Base
 {
     ///<summary> This is the base class that overrides a string </summary>
     public string name;
+    ///<summary> overrides a string> </summary>
     public override string ToString()
     {
          return name + " is a " + this.GetType();
