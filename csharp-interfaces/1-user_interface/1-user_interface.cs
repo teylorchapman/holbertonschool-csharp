@@ -5,6 +5,7 @@
 ///</summary>
 public interface IIneteractive
 {
+    ///<summary> Interact thing </summary>
     void Interact();
 }
 
@@ -13,6 +14,7 @@ public interface IIneteractive
 ///</summary>
 public interface IBreakable
 {
+    ///<summary> Tests Durability </summary>
     int durability { get; set; }
     void Break();
 }
@@ -22,6 +24,7 @@ public interface IBreakable
 ///</summary>
 public interface ICollectable
 {
+    ///<summary> Collects something </summary>
     bool isCollected { get; set; }
     void Collect();
 }
