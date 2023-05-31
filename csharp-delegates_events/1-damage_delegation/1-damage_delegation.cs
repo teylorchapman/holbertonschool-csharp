@@ -29,11 +29,6 @@ public class Player
         this.hp = this.maxHp;
     }
 
-    ///<summary> Printing player health method </summary>
-    public void PrintHealth()
-    {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health");
-    }
 
     ///<summary> TakeDamage method </summary>
     public void TakeDamage(float damage)
@@ -54,4 +49,11 @@ public class Player
             Console.WriteLine($"{name} heals {heal} HP!");
         }
     }
+
+    ///<summary> Printing player health method </summary>
+    public void PrintHealth()
+    {
+        Console.WriteLine($"{name} has {hp} / {maxHp} health");
+    }
+
 }
