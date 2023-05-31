@@ -6,10 +6,7 @@
 public interface IInteractive
 {
     ///<summary> Interact method </summary>
-    void Interact()
-    {
-        Console.WriteLine( $"You try to open the {this.name}. It's locked." );
-    }
+    public void Interact();
 }
 
 ///<summary>
@@ -35,5 +32,11 @@ public class Door : Base, IInteractive
     public Door(string name = "Door")
     {
         this.name = name;
+    }
+
+    ///<summary> Door interaction </summary>
+    public void Interact()
+    {
+        Console.WriteLine( $"You try to open the {this.name}. It's locked." );
     }
 }
