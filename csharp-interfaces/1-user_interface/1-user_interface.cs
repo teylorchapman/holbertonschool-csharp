@@ -37,7 +37,7 @@ public interface ICollectable
 public abstract class Base
 {
     ///<summary> This is the base class that overrides a string </summary>
-    public string name;
+    public string name { get; set; }
     ///<summary> overrides a string> </summary>
     public override string ToString()
     {
@@ -54,13 +54,6 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     public int durability { get; set; }
     ///<summary> Bool </summary>
     public bool isCollected { get; set; }
-
-    ///<summary> This will hopefully fix my issue of not giving name w the main.cs </summary>
-    public string name
-    {
-        get;
-        set;
-    }
 
     ///<summary> Interact method </summary>
     public void Interact()
