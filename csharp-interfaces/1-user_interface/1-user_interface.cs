@@ -3,7 +3,7 @@
 ///<summary>
 /// IIneteractive interface
 ///</summary>
-public interface IIneteractive
+public interface IInteractive
 {
     ///<summary> Interact method </summary>
     void Interact();
