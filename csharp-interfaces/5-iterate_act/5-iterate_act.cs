@@ -163,31 +163,31 @@ public class RoomObjects
         {
             if (type.ToString() == "IInteractive" && item is IInteractive)
             {
-                IInteractive object = item as IInteractive;
+                IInteractive obj = item as IInteractive;
                 
-                if (object != null)
+                if (obj != null)
                 {
-                    object.Interact();
+                    obj.Interact();
                 }
             }
 
             if (type.ToString() == "IBreakable" && item is IBreakable)
             {
-                IBreakable object = item as IBreakable;
+                IBreakable obj = item as IBreakable;
 
-                if (object != null)
+                if (obj != null)
                 {
-                    object.Break();
+                    obj.Break();
                 }
             }
 
             if (type.ToString() == "ICollectable" && item is ICollectable)
             {
-                ICollectable object = item as ICollectable;
+                ICollectable obj = item as ICollectable;
 
-                if (object != null)
+                if (obj != null)
                 {
-                    object.Collect();
+                    obj.Collect();
                 }
             }
         }
