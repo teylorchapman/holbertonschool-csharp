@@ -48,6 +48,4 @@ public class Player
         heal = (heal < 0) ? 0 : heal;
         Console.WriteLine($"{name} heals {heal} HP!");
     }
-
-
 }
