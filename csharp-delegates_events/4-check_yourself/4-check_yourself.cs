@@ -13,9 +13,6 @@ public class Player
     ///<summary> Status </summary>
     private string status;
 
-    ///<summary> Player Delegate </summary>
-    public delegate void CalculateHealth(float amount);
-
     ///<summary> Constructor </summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
