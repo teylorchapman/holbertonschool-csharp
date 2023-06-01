@@ -92,9 +92,11 @@ public class Player
 ///</summary>
 public enum Modifier
 {
-    ///</summary> The enums </summary>
+    ///<summary> Weakling </summary>
     Weak,
+    ///<summary> Based </summary>
     Base,
+    ///<summary> Stronk </summary>
     Strong
 }
 
