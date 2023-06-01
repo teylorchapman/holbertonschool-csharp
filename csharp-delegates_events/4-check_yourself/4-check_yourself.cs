@@ -72,7 +72,7 @@ public class Player
     ///<summary> ValidateHP method </summary>
     public void ValidateHP(float newHp)
     {
-        this.hp = newHp < 0 ? 0 : newHp > maxHp ? maxHp : newHp;
+        this.hp = newHp < 0 ? 0f : newHp > this.maxHp ? maxHp : newHp;
         
         HPCheck (this, new CurrentHPArgs(hp));
     }
