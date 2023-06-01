@@ -29,31 +29,25 @@ public class Player
         this.hp = this.maxHp;
     }
 
-
-    ///<summary> TakeDamage method </summary>
-    public void TakeDamage(float damage)
-    {
-        if (damage < 0f)
-        {
-            damage = 0f;
-            Console.WriteLine($"{name} takes {damage} damage!");
-        }
-    }
-
-    ///<summary> HealDamage method </summary>
-    public void HealDamage(float heal)
-    {
-        if (heal < 0f)
-        {
-            heal = 0f;
-            Console.WriteLine($"{name} heals {heal} HP!");
-        }
-    }
-
     ///<summary> Printing player health method </summary>
     public void PrintHealth()
     {
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
+
+    ///<summary> TakeDamage method </summary>
+    public void TakeDamage(float damage)
+    {
+        damage = (damage < 0) ? 0 : damage;
+        Console.WriteLine($"{name} takes {damage} damage!");
+    }
+
+    ///<summary> HealDamage method </summary>
+    public void HealDamage(float heal)
+    {
+        heal = (heal < 0) ? 0 : heal;
+        Console.WriteLine($"{name} heals {heal} HP!");
+    }
+
 
 }
