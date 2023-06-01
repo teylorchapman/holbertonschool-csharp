@@ -132,6 +132,7 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 /// <sumary> class to handler the events </sumary>
 public class CurrentHPArgs : EventArgs
 {
+    ///<summary> ReadOnly Float </summary>
     public readonly float currentHp;
     
     /// <sumary> Constructor </sumary>
