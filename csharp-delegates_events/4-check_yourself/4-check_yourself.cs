@@ -9,6 +9,9 @@ public class Player
     private string name;
     private float maxHp;
     private float hp;
+    
+    ///<summary> Status </summary>
+    private string status;
 
     ///<summary> Player Delegate </summary>
     public delegate void CalculateHealth(float amount);
@@ -91,19 +94,23 @@ public class Player
     {
         if(e.currentHp == maxHp)
         {
-            status = $"{name} is in perfect health!" ;
-        } else if ( maxHp / 2 <= e.currentHp )
+            status = $"{name} is in perfect health!";
+        }
+        else if ( maxHp / 2 <= e.currentHp )
         {
-            status = $"{name} is doing well!" ;
-        } else if ( maxHp / 4 <= e.currentHp )
+            status = $"{name} is doing well!";
+        }
+        else if ( maxHp / 4 <= e.currentHp )
         {
-            status = $"{name} isn't doing too great..." ;
-        } else if ( 0 < e.currentHp )
+            status = $"{name} isn't doing too great...";
+        }
+        else if ( 0 < e.currentHp )
         {
-            status = $"{name} needs help!" ;
-        } else
+            status = $"{name} needs help!";
+        }
+        else
         {
-            status = $"{name} is knocked out!" ;
+            status = $"{name} is knocked out!";
         }
 
         Console.WriteLine(status);
