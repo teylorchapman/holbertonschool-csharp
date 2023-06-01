@@ -18,7 +18,7 @@ public class Player
 
     ///<summary> HPCheck Handler </summary>
     public EventHandler<CurrentHPArgs> HPCheck;
-    
+
     ///<summary> Constructor </summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
@@ -130,7 +130,7 @@ public enum Modifier
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 /// <sumary> class to handler the events </sumary>
-class CurrentHPArgs : EventArgs
+public class CurrentHPArgs : EventArgs
 {
     public readonly float currentHp;
     
