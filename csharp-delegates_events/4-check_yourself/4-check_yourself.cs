@@ -16,6 +16,9 @@ public class Player
     ///<summary> Player Delegate </summary>
     public delegate void CalculateHealth(float amount);
 
+    /// <summary> HPCheck EventHandler </summary>
+    public EventHandler<CurrentHPArgs> HPCheck;
+
     ///<summary> Constructor </summary>
     public Player(string name = "Player", float maxHp = 100f)
     {
