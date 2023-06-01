@@ -92,26 +92,17 @@ public class Player
     ///<summary> CheckStatus Method </summary>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        if(e.currentHp == maxHp)
-        {
+        float state = e.currentHp/maxHp;
+        if (state == 1)
             status = $"{name} is in perfect health!";
-        }
-        else if ( maxHp / 2 <= e.currentHp )
-        {
+        else if (state >=0.5f)
             status = $"{name} is doing well!";
-        }
-        else if ( maxHp / 4 <= e.currentHp )
-        {
+        else if (state >=0.25f)
             status = $"{name} isn't doing too great...";
-        }
-        else if ( 0 < e.currentHp )
-        {
+        else if (state >0f)
             status = $"{name} needs help!";
-        }
         else
-        {
             status = $"{name} is knocked out!";
-        }
 
         Console.WriteLine(status);
     }
