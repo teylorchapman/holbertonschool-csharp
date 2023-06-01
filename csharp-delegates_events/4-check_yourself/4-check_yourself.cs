@@ -73,6 +73,8 @@ public class Player
     public void ValidateHP(float newHp)
     {
         hp = newHp < 0 ? 0 : newHp > maxHp ? maxHp : newHp;
+        
+        HPCheck (this, new CurrentHPArgs(hp));
     }
 
     ///<summary> ApplyModifier method </summary>
