@@ -23,5 +23,6 @@ public class MatrixMath
                 transposeMatrix[column, row] = Math.Round(matrix[row, column], 2);
             }
         }
+        return transposeMatrix;
     }
 }
